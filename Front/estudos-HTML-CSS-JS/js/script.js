@@ -63,4 +63,10 @@ console.log(parseFloat(numString))
 let nmFloat = 123.456
 console.log(toString(nmFloat))
 
+//---Para conferir o conversão dos valores utiliza o verificador { typeof }
+let nmint = 10
+let nuString = nmint.toString
+let verificar = typeof nmString
+console.log(verificar);
+
 //------------------------------------------------------------------------------------------------------------------------
