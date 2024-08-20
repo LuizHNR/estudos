@@ -69,4 +69,12 @@ let nuString = nmint.toString
 let verificar = typeof nmString
 console.log(verificar);
 
+//--Para substituir um trecho do texto utiliza { replace() }
+let txt = "Estão chegando as provas"
+console.log(txt.replace("provas", "avalições"))
+
+//--O método {toUpperCase()} transforma tudo em maiuscula e { toLowerCase() } transforma em minuscula
+console.log(txt.toUpperCase);
+console.log(txt.toLowerCase);
+
 //------------------------------------------------------------------------------------------------------------------------
