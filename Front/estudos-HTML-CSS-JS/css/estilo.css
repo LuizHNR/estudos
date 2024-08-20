@@ -4,3 +4,130 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    height: auto;
+    gap: 0.5px;
+    /* grid normal */
+  /*grid-template-rows serve para dizer os tamanhos das linhas de uma grid
+    grid-template-rows: 2fr 7fr 2fr;
+    gap serve para separar as linhas e colunas exemplo
+    gap: 10px;
+    grid-row-gap: 10px;
+    grid-column: 10px;*/
+    /* allinhamento na horizontal */
+    /* justify-content: center; */
+    /* alinhamento na vertical */
+    align-items: start;
+    grid-template-areas: 
+        'cabecalho'
+        'hora'
+        'informacao'
+        'informacao2'
+        'links'
+        'rodape';
+   
+}
+#cabecalho{
+    grid-area: cabecalho ;
+    background-color: azure;
+    padding: 20px;
+    border: 1px solid red;
+    height: 10vh;
+}
+
+#hora{
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+    font-size: 40px;
+    border: 1px solid red;
+}
+
+#informacao{
+    display: grid;
+    grid-area: informacao;
+    background-color: azure;
+    padding: 30px;
+    border: 1px solid red;
+    height: auto;
+    gap: 20px;
+
+    & img{
+        display: grid;
+        justify-self: center;
+        height: 60vh;
+    }
+
+    & #imagem-info{
+        display: grid;
+        justify-self: center;
+        gap: 20px;
+        width: 70vw;
+    }
+
+    & #listas{
+        display: grid;
+        gap: 50px;
+        & .lista{
+            & ul{
+                display: grid;
+                gap: 20px;
+            }
+        
+            & ol{
+                display: grid;
+                gap: 20px;
+            }
+        
+            & dl{
+                display: grid;
+                gap: 10px;
+            }
+        }   
+    }
+
+}
+
+#informacao2{
+    grid-area: informacao2;
+    background-color: azure;
+    padding: 20px;
+    border: 1px solid red;
+    height: 10vh;
+}
+
+#links{
+    grid-area: links;
+    background-color: azure;
+    height: auto;
+}
+
+footer{
+    display: grid;
+    grid-area: rodape;
+    border: 1px solid red;
+    height: auto;
+    gap: 10px;
+
+    & #links-conteudos{
+        margin-left: 20px;
+        display: grid;
+        padding: 20px;
+        gap: 10px;
+        
+        & ul{
+            display: grid;
+            gap: 10px;
+        }
+    }
+
+    & .contato{
+        display: grid;
+        justify-self: end;
+        align-self: center;
+        padding: 10px;
+    }
+}

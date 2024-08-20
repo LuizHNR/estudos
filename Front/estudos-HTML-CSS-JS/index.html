@@ -1,36 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- informações soobre a pagina-->
+<!DOCTYPE html> <!--Normativa - Tipo de HTML-->
+<html lang="pt-br">
+<!-- informações sobre a pagina-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>estudo HTML</title>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/script.js" defer></script>
+    <title>estudo Front</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <script src="./JS/script.js" defer></script>
 </head>
 <!-- <body> é tudo oq sera exibido na pagina -->
 <body>
-    <header id="cabecalho">
-        <h1>This is the main Heading</h1>
+    <div class="container">
+        <header id="cabecalho">
+            <h1>Este é o titulo principal o h1</h1>
 
-        <p>This text might be an introduction to the rest of the page. And if the page is a long one it might be split up into several sub-headings</p>
-    </header>
+        </header>
 
-    <main>
-        <h3 id="hora"></h3>
+        <div>
+            <h3 id="hora"></h3>
+        </div>
 
         <div id="informacao">
-            <h2>This is a Sub-Heading</h2>
+            <h2>Este é o sub-titulo o h2</h2>
             <!--nome do atributo e seu valor
             no caso o atributo é linguagem com o valor de engles-->
-            <p lang="en-us">Many long articles have sub-headings so to help you follow the structure of what is being written.
-                There may even be sub-sub-heading (or lower-level heading).</p>
+            <p>Muitos artigos longos têm subtítulos para ajudá-lo a acompanhar a estrutura do que está sendo escrito.
+                Pode até haver sub-subtítulo (ou título de nível inferior)</p>
+            <p lang="en-us"> <i>Many long articles have sub-headings so to help you follow the structure of what is being written.
+                There may even be sub-sub-heading (or lower-level heading).</i></p>
+            <hr />
+
+            <p>Tente não utilizar a tag br, pois ela foge da norma</p>
+            <hr />
+            <img src="./Images/gato-programador.png" alt="gato-programador" title="gato-no-computador">
+
+            <ul id="imagem-info">
+                <li>
+                    <b>O Atributo scr: indica</b>
+                    indica o caminho da imagem, local onde o arquivo está armazenado. Você deverá declarar a pasta e o nome correto da imagem desejada com a sua respectiva extensão.
+                </li>
+                <li>
+                    <b>Atributo alt:</b> insere um pequeno texto que descreve a imagem, ele será exibido caso a imagem não seja carregada pelo navegador. Esse atributo também ajudará na acessibilidade a pessoas que tenham alguma deficiência visual e façam uso de leitores de tela para navegar pela Internet. Quando o leitor encontrar a imagem irá procurar o conteúdo desse atributo e fazer sua leitura. O uso do atributo alt, é uma boa prática.
+                  </li>
+                <li>
+                    <b>Atributo title:</b> é um texto que será exibido assim que você posicionar o ponteiro do mouse sobre a imagem. Ele não é exclusivo para as imagens, praticamente todos os elementos HTML podem usar. Na maioria das vezes o valor atribuído a esse atributo é o mesmo utilizado pelo atributo <b>alt</b>.
+                </li>
+            </ul>
+            <hr />
+            <div id="listas">
+
+                <h2>Tipos de listas</h2>
+                
+                 <div class="lista">
+                    <!-- Lista Numerica -->
+                    <h3>lista Ordenada</h3>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ol>
+                 </div>
+
+                 <div class="lista">
+                    <!-- Lista com pontinhos -->
+                    <h3>Lista não ordenada</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                 </div>
+
+                 <div class="lista">
+                    <!-- Sem nada, só com deficições -->
+                    <h3>Lista de Definição</h3>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>linguagem de Marcação</dd>
+                        <dt>CSS</dt>
+                        <dd>linguagem de Estilização</dd>
+                        <dt>JS</dt>
+                        <dd>linguagem de programação web</dd>
+                    </dl>
+                 </div>
+                
+                 <div class="lista">
+                     <!-- Lista dentro de lista -->
+                    <h3>Lista Aninhada</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS
+                            <ul>
+                                <li>CSS Grid Layout</li>
+                                <li>Flexbox</li>
+                                <li>Box Model</li>
+                            </ul>
+                        </li>
+                        <li>JS</li>
+                    </ul>
+                 </div>
+               
+            </div>
         </div>
 
         <div id="informacao2">
-            <h3>Another Sub-Heading</h3>
+            <h3>Este é outro sub-titulo o h3</h3>
             <p>Here you can see another sub-heading</p>
-        </div>  
-    </main>    
+        </div>
+
+        <nav id="links">
+            <h1>Links</h1>
+
+            <h2>Links Externos</h2>
+            <!-- Links para outros sites -->
+            <a href="http://www.fiap.com.br" target="_blank">Fiap</a>
+
+            <h2>Links Internos</h2>
+            <a href="./Pages/sobre.html">Sobre</a>
+        </nav>
+    </div>
+
+    <footer>       
+        <nav id="links-conteudos">
+            <h3>Areas das paginas</h3>
+            <ul>
+                <li><a href="#cabecalho">Inicio</a></li>
+                <li><a href="#informacao">Informação 1</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#informacao2">Informação 2</a></li>
+                <li><a href="#links">links</a></li>
+            </ul>
+        </nav>
+
+        <div class="contato">
+            <p>Caso queira entrar em contato com o desenvolvedor</p>
+            <a href="mailto:luizhneri12@gmail.com">Contato do Luiz</a>
+            <a href="tel:11973076649">telefone: (11) 97307-6649</a>
+        </div>
+        
+    </footer>
 </body>
 </html>
