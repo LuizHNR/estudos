@@ -102,19 +102,20 @@
 #links{
     grid-area: links;
     background-color: azure;
-    height: auto;
+    height: 20vh;
+
 }
 
 footer{
-    display: grid;
+    display: flex;
     grid-area: rodape;
     border: 1px solid red;
     height: auto;
-    gap: 10px;
+    gap: 70vw;
 
     & #links-conteudos{
-        margin-left: 20px;
         display: grid;
+        width: 20vw;
         padding: 20px;
         gap: 10px;
         
@@ -126,8 +127,10 @@ footer{
 
     & .contato{
         display: grid;
-        justify-self: end;
+        width: 30vw;
+        justify-self: flex-end;
         align-self: center;
+        gap: 10px;
         padding: 10px;
     }
 }
