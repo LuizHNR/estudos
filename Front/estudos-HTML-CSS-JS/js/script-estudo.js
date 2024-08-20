@@ -62,8 +62,10 @@ console.log(txt2.toLowerCase);
 
 //--------------------------------------------------IF ELSE IF ELSE--------------------------------------------------------
 
+
+//-- && = 3, || = ou
 let idade = 18
-if(idade <= 12){
+if(idade >= 5 && idade <= 12){
     document.write("É uma criança")
 }else if(idade <= 17){
     document.write("É um adolescente")
