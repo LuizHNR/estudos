@@ -20,6 +20,12 @@ body{
 
     @import './header.scss';
 
+    main{
+       display: grid;
+       grid-template: auto auto auto / auto;
+       gap: 20px;
+    }
+
 
     footer{
         @include gridCenter();

@@ -55,6 +55,11 @@ body header .trilho .switch {
   left: var(--lado);
   transition: 0.5s;
 }
+body main {
+  display: grid;
+  grid-template: auto auto auto/auto;
+  gap: 20px;
+}
 body footer {
   display: grid;
   grid-template-columns: 40vw 20vw;
