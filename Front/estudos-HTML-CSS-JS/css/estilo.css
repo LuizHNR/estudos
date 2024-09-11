@@ -1,3 +1,10 @@
+:root {
+  --primeira: rgb(224, 224, 224);
+  --segunda: rgb(255, 0, 0);
+  --fundo-mudar: rgb(196, 196, 196);
+  --bola: rgb(156, 156, 156);
+}
+
 * {
   font-family: sans-serif;
   box-sizing: border-box;
@@ -5,13 +12,47 @@
   padding: 0;
 }
 
-body header, body footer, body main {
+body {
+  background-color: var(--primeira);
+}
+body header {
   display: grid;
-  padding: 20px;
-  background-color: azure;
-  border: 1px solid #f00;
+  grid-template-columns: 40vw 20vw;
+  gap: 35vw;
+  padding: 10px;
+  border: 1px solid var(--segunda);
+}
+body header .trilho {
+  justify-self: end;
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: var(--fundo-mudar);
+  border-radius: 50px;
+  cursor: pointer;
+}
+body header .trilho .indicador {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bola);
+  border-radius: 50px;
+  transform: scale(0.8);
+  position: absolute;
+}
+body footer {
+  display: grid;
+  grid-template-columns: 40vw 20vw;
+  gap: 35vw;
+  padding: 10px;
+}
+body a {
+  color: rgb(0, 60, 255);
+  font-style: inherit;
+  cursor: pointer;
 }
 body a:hover {
   font-size: 20px;
-  color: #f00;
+  transition: 0.3s;
+  color: var(--segunda);
 }/*# sourceMappingURL=estilo.css.map */

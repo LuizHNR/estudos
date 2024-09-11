@@ -1,3 +1,5 @@
+@import './variaveis.scss';
+
 *{
     font-family: sans-serif;
     box-sizing: border-box;
@@ -6,21 +8,25 @@
 }
 
 body{
-    @import './variaveis.scss';
-    @import './header.scss';
+    background-color: var(--primeira);
 
-    main{
-        @extend header;
-    }
+    @import './header.scss';
 
 
     footer{
-        @extend header;
+        @include gridCenter();
     }
 
-    & a:hover{
-        font-size: 20px;
-        color: $segunda;
+    & a{
+        color: rgb(0, 60, 255);
+        font-style: inherit;
+        cursor: pointer;
+
+        &:hover{
+            font-size: 20px;
+            transition: 0.3s;
+            color: var(--segunda);
+        }
     }
 }
 
