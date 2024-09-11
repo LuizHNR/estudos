@@ -10,4 +10,8 @@ body header, body footer, body main {
   padding: 20px;
   background-color: azure;
   border: 1px solid #f00;
+}
+body a:hover {
+  font-size: 20px;
+  color: #f00;
 }/*# sourceMappingURL=estilo.css.map */
