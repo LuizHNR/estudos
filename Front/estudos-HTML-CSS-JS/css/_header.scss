@@ -1,10 +1,5 @@
 //criação de objetos
-@mixin gridCenter(){
-    display: grid;
-    grid-template-columns: 40vw 20vw;
-    gap: 35vw;
-    padding: 10px;
-}
+
 
 header{
     @include gridCenter();
