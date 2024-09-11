@@ -30,9 +30,9 @@ body {
 body header {
   display: grid;
   grid-template-columns: 40vw 20vw;
+  border: 1px solid var(--segunda);
   gap: 35vw;
   padding: 10px;
-  border: 1px solid var(--segunda);
 }
 body header .trilho {
   justify-self: end;
@@ -55,7 +55,19 @@ body header .trilho .switch {
   left: var(--lado);
   transition: 0.5s;
 }
+body header .trilho img {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bola);
+  border-radius: 50%;
+  border: 0px;
+  transform: scale(0.9);
+  position: absolute;
+  left: var(--lado);
+  transition: 0.5s;
+}
 body main {
+  margin: 10px;
   display: grid;
   grid-template: auto auto auto/auto;
   gap: 50px;
@@ -78,6 +90,7 @@ body main #informacao #listas :is(ul, ol, dl) {
 body footer {
   display: grid;
   grid-template-columns: 40vw 20vw;
+  border: 1px solid var(--segunda);
   gap: 35vw;
   padding: 10px;
 }

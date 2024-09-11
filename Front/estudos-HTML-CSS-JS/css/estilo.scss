@@ -10,6 +10,7 @@
 @mixin gridCenter(){
     display: grid;
     grid-template-columns: 40vw 20vw;
+    border: 1px solid var(--segunda);
     gap: 35vw;
     padding: 10px;
 }
@@ -21,6 +22,7 @@ body{
     @import './header.scss';
 
     main{
+        margin: 10px;
        display: grid;
        grid-template: auto auto auto / auto;
        gap: 50px;
@@ -48,6 +50,7 @@ body{
 
     footer{
         @include gridCenter();
+
     }
 
     & a{
