@@ -9,6 +9,10 @@ body{
     @import './variaveis.scss';
     @import './header.scss';
 
+    main{
+        @extend header;
+    }
+
 
     footer{
         @extend header;

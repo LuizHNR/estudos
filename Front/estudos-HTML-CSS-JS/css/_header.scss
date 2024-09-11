@@ -3,7 +3,6 @@
 //criação de objetos
 @mixin gridCenter(){
     display: grid;
-    justify-self: center;
     padding: 20px;
 }
 
