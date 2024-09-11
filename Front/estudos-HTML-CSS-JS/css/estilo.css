@@ -3,6 +3,17 @@
   --segunda: rgb(255, 0, 0);
   --fundo-mudar: rgb(196, 196, 196);
   --bola: rgb(156, 156, 156);
+  --cor-font: black;
+  --lado: 0px;
+}
+
+.dark-mode:root {
+  --primeira: rgb(34, 34, 34);
+  --segunda: rgb(255, 0, 0);
+  --fundo-mudar: rgb(39, 39, 39);
+  --bola: rgb(56, 56, 56);
+  --cor-font: white;
+  --lado: 50px;
 }
 
 * {
@@ -14,6 +25,7 @@
 
 body {
   background-color: var(--primeira);
+  color: var(--cor-font);
 }
 body header {
   display: grid;
@@ -25,20 +37,23 @@ body header {
 body header .trilho {
   justify-self: end;
   display: flex;
-  position: relative;
-  width: 100px;
-  height: 50px;
-  background-color: var(--fundo-mudar);
-  border-radius: 50px;
   cursor: pointer;
+  height: 50px;
+  width: 100px;
+  background-color: var(--fundo-mudar);
+  border-radius: 150px;
+  position: relative;
 }
-body header .trilho .indicador {
+body header .trilho .switch {
   width: 50px;
   height: 50px;
   background-color: var(--bola);
-  border-radius: 50px;
+  border-radius: 50%;
+  border: 0px;
   transform: scale(0.8);
   position: absolute;
+  left: var(--lado);
+  transition: 0.5s;
 }
 body footer {
   display: grid;

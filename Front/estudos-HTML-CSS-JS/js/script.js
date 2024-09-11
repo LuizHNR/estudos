@@ -21,3 +21,10 @@ function hora(){
 hora();
 
 //-----------------------------------------------------------------------------------------------------------------------
+
+const $html = document.querySelector('html');
+const $button = document.querySelector('.switch');
+
+$button.addEventListener('click', () => {
+    $html.classList.toggle('dark-mode');
+})

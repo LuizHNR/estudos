@@ -3,4 +3,15 @@
     --segunda: rgb(255, 0, 0);
     --fundo-mudar: rgb(196, 196, 196);
     --bola: rgb(156, 156, 156);
+    --cor-font: black;
+    --lado: 0px;
+}
+
+.dark-mode:root{
+    --primeira: rgb(34, 34, 34);
+    --segunda: rgb(255, 0, 0);
+    --fundo-mudar: rgb(39, 39, 39);
+    --bola: rgb(56, 56, 56);
+    --cor-font: white;
+    --lado: 50px;
 }
