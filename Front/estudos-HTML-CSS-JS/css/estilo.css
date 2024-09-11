@@ -1,15 +1,15 @@
-#cabecalho {
-  display: grid;
-  justify-self: center;
-  background-color: azure;
-  padding: 20px;
-  border: 1px solid #f00;
-  height: 10vh;
-}
-
 * {
   font-family: sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+#cabecalho {
+  display: grid;
+  justify-self: center;
+  padding: 20px;
+  background-color: azure;
+  border: 1px solid #f00;
+  height: 10vh;
 }/*# sourceMappingURL=estilo.css.map */

@@ -4,12 +4,12 @@
 @mixin gridCenter(){
     display: grid;
     justify-self: center;
+    padding: 20px;
 }
 
 #cabecalho{
     @include gridCenter();
     background-color: $primeira;
-    padding: 20px;
     border: 1px solid $segunda;
     height: 10vh;
 }
