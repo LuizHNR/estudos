@@ -7,9 +7,8 @@
     padding: 20px;
 }
 
-#cabecalho{
+header{
     @include gridCenter();
     background-color: $primeira;
     border: 1px solid $segunda;
-    height: 10vh;
 }

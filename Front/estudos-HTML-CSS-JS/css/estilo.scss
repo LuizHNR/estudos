@@ -5,5 +5,14 @@
     padding: 0;
 }
 
-@import './variaveis.scss';
-@import './header.scss';
+body{
+    @import './variaveis.scss';
+    @import './header.scss';
+
+
+    footer{
+        @extend header;
+    }
+}
+
+
