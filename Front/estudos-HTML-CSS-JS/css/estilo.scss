@@ -27,6 +27,15 @@ body{
        grid-template: auto auto auto / auto;
        gap: 50px;
 
+       & .horas{
+            justify-self: center;
+            align-items: center;
+
+            & h3{
+                text-align: center;
+            }
+       }
+
         & #informacao{
             display: grid;
             gap: 20px;
