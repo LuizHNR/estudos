@@ -5,6 +5,11 @@ export default function Cabecalho() {
         <div>
             <h1>Cabecalho</h1>
             <Menu />
+            <div className="trilho">
+                <label htmlFor="switch">
+                    <input type="Button" className="switch"/>
+                </label>
+            </div>
         </div>
     )
 }
