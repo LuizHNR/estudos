@@ -61,9 +61,21 @@ body main {
   grid-template: auto auto auto/auto;
   gap: 50px;
 }
+body main .horas {
+  justify-self: center;
+  align-items: center;
+}
+body main .horas h3 {
+  text-align: center;
+}
 body main #informacao {
   display: grid;
+  padding: 10px;
   gap: 20px;
+}
+body main #informacao.gato-img {
+  width: 70px;
+  height: 100px;
 }
 body main #informacao #listas {
   display: grid;
